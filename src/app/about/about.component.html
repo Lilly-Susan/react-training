@@ -1,0 +1,29 @@
+<div class="container">
+<ul class="nav nav-tabs">
+    <li class="nav-item" [class.active]="viewmode == 'all'">
+      <a class="nav-link active" aria-current="page" (click)="viewmode = 'all'">all</a>
+    </li>
+    
+    <li class="nav-item" [class.active]="viewmode == 'fashion'">
+      <a class="nav-link" (click)="viewmode = 'fashion'">fasion</a>
+    </li>
+    <li class="nav-item" [class.active]="viewmode == 'kids'">
+        <a class="nav-link" (click)="viewmode = 'kids'">kids</a>
+      </li>
+      <li class="nav-item" [class.active]="viewmode == 'women'">
+        <a class="nav-link" (click)="viewmode = 'women'">women</a>
+      </li>
+      <li class="nav-item" [class.active]="viewmode == 'offer'">
+        <a class="nav-link" (click)="viewmode = 'offer'">offer</a>
+      </li>
+    
+  </ul>
+
+  <div [ngSwitch]="viewmode">
+      <div *ngSwitchCase="'all'"><h1>all</h1></div>
+      <div *ngSwitchCase="'fashion'"><h1>fashion</h1></div>
+      <div *ngSwitchCase="'kids'"><h1>kids</h1></div>
+      <div *ngSwitchCase="'women'"><h1>women</h1></div>
+      <div *ngSwitchCase="'offer'"><h1>offer</h1></div>
+  </div>
+</div>

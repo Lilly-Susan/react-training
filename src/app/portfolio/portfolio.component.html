@@ -1,0 +1,36 @@
+<div class="container">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td class="text" [ngClass]="amount[0] >=40000 ? 'text-primary' : 'text-danger'">{{amount[0]}}</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td class="text" [ngClass]="amount[1] >=40000 ? 'text-primary' : 'text-danger'">{{amount[1]}}</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry the Bird</td>
+        <td>The Bird</td>
+        <td>@twitter</td>
+        <td class="text" [ngClass]="amount[2] >=40000 ? 'text-primary' : 'text-danger'">{{amount[2]}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
